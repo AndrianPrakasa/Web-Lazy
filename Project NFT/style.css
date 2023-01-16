@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: "cooper";
@@ -312,80 +317,53 @@ ul {
 }
 /* ROADMAP END */
 
-/* FAQ */
+/* faq */
+.main-faq{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #bedfe8;
+}
 .faq{
-  width: 100%;
-  padding: 50;
+  width: 800px;
 }
-.faq-title{
-  text-align: center;
+.faq .contentBx{
+  position:relative;
+  margin: 10px 20px;
 }
-.bi-caret-down-fill{
-  width: 100px;
-  color: white;
-}
-.bi{
-  width: 100px;
-}
-.faq-list{
-  width: 60%;
+.faq .contentBx .label{
+  position: relative;
   padding: 10px;
+  background: #2694af;
+  color: #fff;
+  cursor: pointer;
 }
-.faq1{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 12px;
-  padding: 5px;
-  background-color: blue;
-  width: 50%;
-  margin-bottom: 3%;
+.faq .contentBx .label::before{
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
 }
-.faq2{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 12px;
-  padding: 5px;
-  background-color: blue;
-  width: 50%;
-  margin-bottom: 3%;
+.faq .contentBx.active .label::before{
+  content: '-';
 }
-.faq3{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 12px;
-  padding: 5px;
-  background-color: blue;
-  width: 50%;
-  margin-bottom: 3%;
+.faq .contentBx .content{
+  position: relative;
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
 }
-.faq4{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 12px;
-  padding: 5px;
-  background-color: blue;
-  width: 50%;
-  margin-bottom: 3%;
+.faq .contentBx.active .content{
+  height: 150px;
+  padding: 10px;
+
 }
-.faq5{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 12px;
-  padding: 5px;
-  background-color: blue;
-  width: 50%;
-}
-/* FAQ END */
+/* faq END */
 
 /* FOOTER */
 .footer{

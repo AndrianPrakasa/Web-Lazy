@@ -28,7 +28,7 @@
           <div class="topnav">
             <a class="active" href="#home">About</a>
             <a class="active" href="#news">Roadmap</a>
-            <a class="active" href="#contact">FAQ</a>
+            <a class="active" href="#contact">faq</a>
           </div>
           <div class="topnav1">
             <a><img class="navlogo" src="image/dc.png" alt="discord" /> </a>
@@ -168,34 +168,42 @@
         </div>
       </div>
     </div>
-    <!--Faq-->
+    <!--faq-->
+    <div class="main-faq">
     <div class="faq">
-      <h1 class="faq-title">FAQ</h1>
-      <div class="faq-content">
-        <ul class="faq-list">
-          <span class="faq1">
-            <li><a>How many LazyDogBuds will released?</a></li>
-            <li><i class="bi bi-caret-down-fill"></i></li>
-          </span>
-          <span class="faq2">
-            <li><a>How much it cost?</a></li>
-            <li><i class="bi bi-caret-down-fill"></i></li>
-          </span>
-          <span class="faq3">
-            <li><a>Wen?</a></li>
-            <li><i class="bi bi-caret-down-fill"></i></li>
-          </span>
-          <span class="faq4">
-            <li><a>Is there a whitelist?</a></li>
-            <li><i class="bi bi-caret-down-fill"></i></li>
-          </span>
-          <span class="faq5">
-            <li><a>What wallet i can use ?</a></li>
-            <li><i class="bi bi-caret-down-fill"></i></li>
-          </span>
-        </ul>
+      <div class="contentBx">
+        <div class="label">List 1</div>
+        <div class="Content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Quam soluta nihil corporis. Omnis autem tempora, dolorum aut nihil fugit totam, 
+          unde provident deleniti libero, cum iure porro iste vitae minus.</p></div>
       </div>
+    <div class="contentBx">
+      <div class="label">List 2</div>
+      <div class="Content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quam soluta nihil corporis. Omnis autem tempora, dolorum aut nihil fugit totam, 
+        unde provident deleniti libero, cum iure porro iste vitae minus.</p></div>
+        </div>
+    <div class="contentBx">
+      <div class="label">List 3</div>
+      <div class="Content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quam soluta nihil corporis. Omnis autem tempora, dolorum aut nihil fugit totam, 
+        unde provident deleniti libero, cum iure porro iste vitae minus.</p></div>
+        </div>
+    <div class="contentBx">
+      <div class="label">List 4</div>
+      <div class="Content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quam soluta nihil corporis. Omnis autem tempora, dolorum aut nihil fugit totam, 
+        unde provident deleniti libero, cum iure porro iste vitae minus.</p></div>
+        </div>
+    <div class="contentBx">
+      <div class="label">List 5</div>
+      <div class="Content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quam soluta nihil corporis. Omnis autem tempora, dolorum aut nihil fugit totam, 
+        unde provident deleniti libero, cum iure porro iste vitae minus.</p></div>
     </div>
+    </div>
+    </div>
+      <!--Footer-->
     <div class="footer">
       <div class="left-footer">
         <img class="footer-logo" src="./image/Dogbuds.png" />
@@ -212,5 +220,14 @@
         </div>
       </div>
     </div>
+    <script>
+      const faq = document.getElementsByClassName('contentBx');
+
+      for (i = 0; i<faq.length; i++){
+        faq[i].addEventListener('click', function(){
+          this.classlist.toggle('active')
+        })
+      }
+    </script>
   </body>
 </html>
