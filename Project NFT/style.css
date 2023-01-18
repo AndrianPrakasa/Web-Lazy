@@ -35,67 +35,84 @@ body {
 .header {
   background-color: transparent;
   color: #fff;
-  text-align: center;
+  /* text-align: center; */
   padding: 5%;
 }
+.nav-item{
+  padding-top: -5%;
+}
 .logo {
+  /* display: flex; */
   display: flex;
-
-  margin-top: -2%;
-  width: 75px;
-  height: 75px;
+  margin-left: 75%;
+  margin-top: -50%;
+  width: 70px;
+  height: 70px;
+  
+}
+.d-flex{
+  padding-top: -5%;
 }
 .topnav {
   display: flex;
-  float: right;
+  /* float: right; */
   overflow: hidden;
   background-color: black;
   opacity: 0.9;
   margin-right: 1%;
-  border-radius: 150px;
-  margin-top: -6%;
+  border-radius: 15px; 
+  margin-top: -8%;
   border-color: yellow;
   border-style: solid;
+  height: 45px;
 }
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: yellow;
   color: black;
   border: 2px solid;
-  border-radius: 100px;
+  border-radius: 15px;
   transition: background-color 0.5s;
 }
 .topnav1 {
   display: flex;
-  float: right;
+  /* float: right; */
   overflow: hidden;
   background-color: black;
-  opacity: 0.8;
-  margin-right: -15%;
-  border-radius: 150px;
-  margin-top: -6%;
-  border-color: cyan;
+  opacity: 0.9;
+  margin-right: -1%;
+  border-radius: 15px; 
+  margin-top: -8%;
+  border-color: rgb(55, 111, 231);
   border-style: solid;
-  width: 15%;
+  width: 100px;
+  height: 45px;
+  text-align: center;
 }
 .topnav1 a:hover {
-  background-color: grey;
+  background-color: rgb(55, 111, 231);
   border: 2px solid;
-  border-radius: 100px;
+  border-radius: 15px;
   transition: background-color 0.5s;
   color: black;
+  text-align: center;
+
 }
 .active {
-  float: right;
+  /* float: right; */
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding-left: 14px;
+  padding-right: 16px;
+  padding-top: 2.5%;
+  /* padding: 14px 16px; */
   text-decoration: none;
   font-size: 17px;
 }
 .navlogo {
-  margin: 5% 0 2% 0;
-  width: 40%;
+  /* margin: 5% 0 2% 0; */
+  width: 60%;
   padding: 8%;
+  padding-top: 25%;
 }
 .scrollmenu {
   background-color: #333;
@@ -439,14 +456,14 @@ ul {
     padding: 5%;
     width: 85%;
   }
-  .logo {
+  /* .logo {
     display: flex;
 
     margin-top: -2%;
     width: 75px;
     height: 75px;
-  }
-  .topnav {
+  } */
+  /* .topnav {
     display: flex;
     float: right;
     overflow: hidden;
@@ -482,7 +499,7 @@ ul {
     border-radius: 100px;
     transition: background-color 0.5s;
     color: black;
-  }
+  } */
   .about {
     margin: 0 auto;
     width: 100%;
