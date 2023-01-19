@@ -335,50 +335,30 @@ ul {
 /* ROADMAP END */
 
 /* faq */
-.main-faq{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #bedfe8;
+details.styled {
+	padding: 15px;
+	border: 1px solid #121212;
+	border-radius: 3px;
+	margin-bottom: 1em;
+	transition: all 0.4s ease-in-out;
+	max-height: 20px;
+	overflow: hidden;
+  bottom: 69px;
 }
-.faq{
-  width: 800px;
-}
-.faq .contentBx{
-  position:relative;
-  margin: 10px 20px;
-}
-.faq .contentBx .label{
-  position: relative;
-  padding: 10px;
-  background: #2694af;
-  color: #fff;
-  cursor: pointer;
-}
-.faq .contentBx .label::before{
-  content: '+';
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  font-size: 1.5em;
-}
-.faq .contentBx.active .label::before{
-  content: '-';
-}
-.faq .contentBx .content{
-  position: relative;
-  background: #fff;
-  height: 0;
-  overflow: hidden;
-  transition: 0.5s;
-  overflow-y: auto;
-}
-.faq .contentBx.active .content{
-  height: 150px;
-  padding: 10px;
 
+details[open].styled {
+	background-color: rgba(0,0,0,0.1);
+	max-height: 500px;
+}
+
+details.styled summary {
+	outline: none;
+	cursor: pointer;
+  align-items: center;
+}
+
+details[open].styled summary {
+	padding-bottom: 1em;
 }
 /* faq END */
 
