@@ -292,5 +292,35 @@
         </details>
       </div>
     </div>
+
+    <script>
+      // ROADMAP 
+      window.addEventListener("scroll",myfunction);
+      const content = document.querySelector(".roadmapbody");
+
+      function myfunction(){
+        const contentposisi = content.getBoundingClientRect().top;
+        const screenposisi = window.innerHeight;
+        if(contentposisi < screenposisi){
+          content.classList.add("activeroadmap");
+        }else {
+          content.classList.remove("activeroadmap");
+        }
+      };
+
+      //ABOUT
+      window.addEventListener("scroll",about1);
+      const about = document.querySelector(".bungkus_biodata");
+
+      function about1(){
+        const contentabout = about.getBoundingClientRect().top;
+        const aboutposisi = window.innerHeight;
+        if(contentabout < aboutposisi){
+          about.classList.add("activebio");
+        }else {
+          about.classList.remove("activebio");
+        }
+      };
+    </script>
   </body>
 </html>

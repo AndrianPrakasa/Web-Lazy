@@ -187,17 +187,33 @@ body {
   margin-top: 0%;
   padding: 5% 0 5% 0;
 }
-.bungkus_biodata {
+/* .bungkus_biodata {
   position: relative;
   top: 20%;
   right: 50%;
   transform: translate(50%, -50%);
   text-align: center;
+} */
+.bungkus_biodata {
+  text-align: center;
+	opacity: 0;
+  margin-bottom: -200vh; 
+  top: 200vh;
+	justify-content: space-evenly; 
+	transition: 2.5s; 
+}
+.activebio{
+  position: relative;
+  top: 20%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  text-align: center;
+  opacity: 1;
 }
 .tempat_biodata {
   display: inline-block;
   /* margin: 0 1% 0 1%; */
-  /* background: white; */
+  /* background: white; */ 
   width: 15%;
   margin: 0 0%;
 }
@@ -257,10 +273,25 @@ body {
   margin-top: 0%;
   padding: 5% 0 5% 0;
 }
+/* .roadmapbody {
+  margin: auto;
+  width: auto;
+  text-align: center;
+} */
 .roadmapbody {
   margin: auto;
   width: auto;
   text-align: center;
+  margin-left: -200px;
+	opacity: 0;
+	left: 200;
+	justify-content: space-evenly;
+	transition: 1.5s;
+}
+.activeroadmap{
+  margin-left: 10px; 
+	opacity: 1;
+	right: 0;
 }
 .tempat {
   display: inline-block;
