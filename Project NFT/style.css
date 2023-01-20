@@ -366,6 +366,13 @@ ul {
 /* ROADMAP END */
 
 /* faq */
+
+.main-faq{
+  display: flex;
+  justify-content: center;
+}
+
+
 details.styled {
 	padding: 15px;
 	border: 1px solid #121212;
