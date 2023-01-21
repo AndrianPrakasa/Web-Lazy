@@ -372,7 +372,6 @@ ul {
   justify-content: center;
   padding-bottom: 5%;
   text-align: center;
-  align-items: center;
 }
 .faq{
   
@@ -404,6 +403,7 @@ details[open].styled {
   background-color: rgba(0,0,0,0.1);
 	max-height: 500px;
   width: 50%;
+  margin: auto;
 }
 
 details.styled summary {
@@ -420,9 +420,8 @@ details[open].styled summary {
 summary[open].styled {
   display:none;
 }
-details[open] {
-  display: flex;
-  align-items: center;
+details.styled {
+  margin: auto;
 }
 details > summary {
   list-style: none;
