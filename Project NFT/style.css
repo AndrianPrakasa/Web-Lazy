@@ -371,8 +371,15 @@ ul {
   display: flex;
   justify-content: center;
   padding-bottom: 5%;
+  text-align: center;
+  align-items: center;
 }
-
+.faq{
+  
+}
+.text-faq{
+  text-align: center;
+}
 details.styled {
 	padding: 15px;
 	border: 1px solid #121212;
@@ -383,6 +390,7 @@ details.styled {
 	overflow:hidden;
   background-color: #09a3b8;
   width: 500px;
+  
 }
 .judul-faq{
   display: flex;
@@ -406,9 +414,15 @@ details.styled summary {
 
 details[open].styled summary {
 	padding-bottom: 1em;
+  display: flex;
+  text-align: center;
 }
 summary[open].styled {
-  display:none
+  display:none;
+}
+details[open] {
+  display: flex;
+  align-items: center;
 }
 details > summary {
   list-style: none;
